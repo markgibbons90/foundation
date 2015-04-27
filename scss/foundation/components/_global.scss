@@ -71,7 +71,7 @@ $base-line-height: 1.5 !default;
 // $property - Default: all, Options: http://www.w3.org/TR/css3-transitions/#animatable-properties
 // $speed - Default: 300ms
 // $ease - Default:ease-out, Options: http://css-tricks.com/almanac/properties/t/transition-timing-function/
-@mixin single-transition($property:all, $speed:300ms, $ease:ease-out) {
+@mixin single-transition($property:all, $speed:200ms, $ease:ease-out) {
   transition: $property $speed $ease;
 }
 
@@ -241,7 +241,7 @@ $jet           : #222222 !default;
 $black         : #000000 !default;
 
 // We use these as default colors throughout
-$primary-color: #008CBA !default;   // bondi-blue
+$primary-color: darken(#008CBA, 5%) !default;   // bondi-blue
 $secondary-color: #e7e7e7 !default; // white-lilac
 $alert-color: #f04124 !default;     // cinnabar
 $success-color: #43AC6A !default;   // sea-green

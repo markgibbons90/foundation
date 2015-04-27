@@ -10,10 +10,10 @@
 $include-html-button-classes: $include-html-classes !default;
 
 // We use these to build padding for buttons.
-$button-tny: rem-calc(10) !default;
-$button-sml: rem-calc(14) !default;
-$button-med: rem-calc(16) !default;
-$button-lrg: rem-calc(18) !default;
+$button-tny: rem-calc(6) !default;
+$button-sml: rem-calc(9) !default;
+$button-med: rem-calc(11) !default;
+$button-lrg: rem-calc(14) !default;
 
 // We use this to control the display property.
 $button-display: inline-block !default;
@@ -25,8 +25,8 @@ $button-font-color: $white !default;
 $button-font-color-alt: $oil !default;
 $button-font-tny: rem-calc(11) !default;
 $button-font-sml: rem-calc(13) !default;
-$button-font-med: rem-calc(16) !default;
-$button-font-lrg: rem-calc(20) !default;
+$button-font-med: rem-calc(15) !default;
+$button-font-lrg: rem-calc(18) !default;
 $button-font-weight: $font-weight-normal !default;
 $button-font-align: center !default;
 
@@ -39,11 +39,11 @@ $button-border-style: solid !default;
 $button-bg-color: $primary-color !default;
 $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor) !default;
 $button-border-color: $button-bg-hover !default;
-$secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor) !default;
+$secondary-button-bg-hover: scale-color($secondary-color, $lightness: -10%) !default;
 $secondary-button-border-color: $secondary-button-bg-hover !default;
-$success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor) !default;
+$success-button-bg-hover: scale-color($success-color, $lightness: -15%) !default;
 $success-button-border-color: $success-button-bg-hover !default;
-$alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor) !default;
+$alert-button-bg-hover: scale-color($alert-color, $lightness: -15%) !default;
 $alert-button-border-color: $alert-button-bg-hover !default;
 $warning-button-bg-hover: scale-color($warning-color, $lightness: $button-function-factor) !default;
 $warning-button-border-color: $warning-button-bg-hover !default;
@@ -81,7 +81,7 @@ $button-disabled-cursor: $cursor-default-value !default;
     text-align: $button-font-align;
     -webkit-appearance: none;
     -moz-appearance: none;
-    border-radius:0;
+    border-radius: 2px;
   }
   @if $display { display: $display; }
 }
